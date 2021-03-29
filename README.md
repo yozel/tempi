@@ -1,11 +1,11 @@
-# Foobar
+# Tempi
 
 Tempi is a minimalist template engine.
 
 ## Installation
 
 ```bash
-go get github.com/yozel/tempi
+go get github.com/yozel/tempi/cmd
 ```
 
 ## Usage
