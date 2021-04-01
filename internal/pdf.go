@@ -20,7 +20,8 @@ func GeneratePdf(file io.Writer, text string) error {
 
 	_, FontSize := pdf.GetFontSize()
 
-	pdf.MultiCell(210-(2*margin), FontSize+LineHeight, text, "", "L", false)
+	tr := pdf.UnicodeTranslatorFromDescriptor("")
+	pdf.MultiCell(210-(2*margin), FontSize+LineHeight, tr(text), "", "L", false)
 
 	return pdf.Output(file)
 }
